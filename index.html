@@ -1,0 +1,77 @@
+<!-- Indica que o documento é um arquivo HTML. -->
+<!DOCTYPE html>
+
+<!-- Define a linguagem do conteúdo da página. -->
+<html lang="pt-br">
+
+<!-- Armazena informações sobre a página. -->
+<head>
+
+	<!-- Conjunto de caracteres que contém acentuação e ç. -->
+	<meta charset="utf-8">
+
+	<!-- Configuração da janela de visualização ( responsividade ). -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importação do arquivo CSS. -->
+	<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+
+
+	<!-- Título da aba do navegador -->
+	<title>SUGPORTO</title>
+</head>
+
+<!-- Conteúdo apresentado na tela. -->
+<body>
+	<!-- Agrupa os elementos que compõe o cabeçalho. -->
+	<header class="cabecalho">
+		<img class="cabecalho-imagem" src="assets/Img/Logo (1).png"alt="Logo">
+		
+
+		<button id="openMenu">&#x1F515;</button>
+
+		<!-- Agrupa links de navegação no site. -->
+		<nav class="cabecalho-menu">
+			<a class="cabecalho-menu-item" href="#">Home</a>
+			<a class="cabecalho-menu-item" href="#">About</a>
+			<a class="cabecalho-menu-item" href="">Contact</a>
+		</nav>
+	</header>
+	<!-- Agrupa o conteúdo principal da página ou aplicação. -->
+	<main class="conteudo">
+		<h1 class="titulo-conteudo">Portal Suape de Segurança</h1>
+
+		<section class="conteudo-principal">
+
+			<div class="conteudo-principal-escrito">
+				<img class="immagem-button" src="assets/Img/icons-00.png" alt="">	
+				<button class="button-principal">Rotas de evacuação</button>
+			</div>
+
+			<div class="conteudo-principal-escrito">
+				<img class="immagem-button" src="assets/Img/icons-01.png" alt="">
+				<button class="button-principal">Relatar Incidentes	</button>		
+			</div>
+
+			<div class="conteudo-principal-escrito">
+				<img class="immagem-button" src="assets/Img/icons-02.png" alt="">
+				<button class="button-principal">	Contatos de Emergencia</button>
+			</div>
+
+		</section>
+
+		<section class="conteudo-secundario">
+
+			<div id="map" class="conteudo-mapa">
+				<h3 class="titulo-conteudo-segundario"> Mapa da Região &#128269;</h3>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63153.19971145649!2d-35.015252550747995!3d-8.394286223990628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smapa%20suape!5e0!3m2!1spt-BR!2sbr!4v1695754242591!5m2!1spt-BR!2sbr" width="300" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</section>
+	</main>
+	<!-- Agrupa informações de autoria, direitos autorais, contato, 
+		   mapa do site, links e documento relacionados. -->
+	<footer>Footer</footer>
+
+	<!-- Importação do arquivo JavaScript. -->
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
