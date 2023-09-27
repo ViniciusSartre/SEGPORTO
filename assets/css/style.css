@@ -64,7 +64,7 @@
   color: #fff;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 5px
 }
 .titulo-conteudo-segundario{
   color:rgb(9, 9, 9);
@@ -78,14 +78,14 @@
   justify-content: center;
   text-align: center;
   
+  
 }
 
 .conteudo-mapa iframe {
   width: 80%; /* Defina a largura do mapa conforme necessário */
   height: auto; /* A altura será ajustada automaticamente para manter a proporção */
   max-width: 600px; /* Defina um valor máximo para a largura do mapa, se desejar */
-  border: 1px solid #ccc; /* Adicione uma borda, se desejar */
-  border-radius: 5px; /* Adicione borda arredondada, se desejar */
+
 }
 
 
