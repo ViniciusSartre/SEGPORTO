@@ -10,11 +10,10 @@ self.addEventListener('install', event => {
 
         './index.html',
 
-        './assets/css/layout.css',
+        './css/style.css',
 
-        './assets/js/script.js',
-
-
+        './js/scripts.js',
+        
         './assets/img/icon_144.png',
         './assets/img/icon_192.png',
         './assets/img/icon_512.png',
@@ -25,6 +24,7 @@ self.addEventListener('install', event => {
       ]))
   );
 });
+
 self.addEventListener('message', function (event) {
   if (event.data.action === 'skipWaiting') {
     self.skipWaiting();
@@ -43,14 +43,13 @@ self.addEventListener('fetch', function (event) {
 
   //Atualizacao cache
   /*event.respondWith(
-  caches.match(event.request)
-    .then(function (response) {
-      if (response) {
-        return response;
-      }
-      return fetch(event.request);
-    })
-   );*/
+    caches.match(event.request)
+      .then(function (response) {
+        if (response) {
+          return response;
+        }
+        return fetch(event.request);
+      })
+  );*/
 
 });
-
