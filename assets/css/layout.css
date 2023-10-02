@@ -1,0 +1,112 @@
+body{font-family: 'Orienta', sans-serif;}
+
+
+/* Estilos para o cabeçalho */
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  color: #fff;
+}
+
+.cabecalho-imagem {
+  height: 70px;
+}
+
+.titulo-conteudo {
+  font-size: 24px;
+}
+
+/* Estilos para o conteúdo principal */
+.conteudo {
+  padding: 20px;
+}
+
+/* Estilo para os itens da lista */
+#lista-contatos-emergencia ul li a {
+  margin: 5px 0;
+  font-weight: bold; /* Deixa o texto em negrito */
+  text-decoration: none; /* Remove a formatação de link */
+  color: #fdfdfd; /* Cor do texto */
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.conteudo-principal-escrito {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.button-principal {
+  padding: 20px 100px;
+  background-color: #391BB0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px
+}
+
+.button-flutuante-direito {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #391BB0; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto */
+  border: none;
+  border-radius: 50%; /* Formato circular do botão */
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 60px; /* Centraliza verticalmente o ícone */
+  cursor: pointer;
+}
+
+
+.button-flutuante-esquerdo {
+  position: fixed;
+  bottom: 20px;
+  left:  20px;
+  background-color: #391BB0; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto */
+  border: none;
+  border-radius: 50%; /* Formato circular do botão */
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 60px; /* Centraliza verticalmente o ícone */
+  cursor: pointer;
+}
+
+.titulo-conteudo-segundario{
+  color:rgb(9, 9, 9);
+  font-size: 15px;
+}
+
+#mapa{
+  height: 100%;
+}
+
+.conteudo-mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.immagem-button {
+	width: 50px; /* Defina a largura desejada */
+	height: 50px; /* Defina a altura desejada */
+	margin-right: 10px; /* Ajuste a margem direita conforme necessário */
+}

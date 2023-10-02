@@ -15,7 +15,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Importação do arquivo CSS. -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
 
 	<link rel="shortcut icon" href="assets/Img/icon-72-72.png" type="image/x-icon">
 	
@@ -41,6 +41,10 @@
 	<link rel="apple-touch-icon" href="assets/img/icon_144.png">
 	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orienta&display=swap" rel="stylesheet">
+
 	<link rel="icon" type="image/png" href="assets/img/icon_144.png">
 </head>
 
@@ -49,15 +53,7 @@
 <body>
 	<!-- Agrupa os elementos que compõe o cabeçalho. -->
 	<header class="cabecalho">
-		<img class="cabecalho-imagem" src="assets/Img/Logo (1).png" alt="Logo">
-		<button id="openMenu">&#x1F515;</button>
-
-		<!-- Agrupa links de navegação no site. -->
-		<nav class="cabecalho-menu">
-			<a class="cabecalho-menu-item" href="#">Home</a>
-			<a class="cabecalho-menu-item" href="#">About</a>
-			<a class="cabecalho-menu-item" href="">Contact</a>
-		</nav>
+		<img class="cabecalho-imagem" src="assets/Img/Logo-1.webp" alt="Logo">
 	</header>
 	<!-- Agrupa o conteúdo principal da página ou aplicação. -->
 	<main class="conteudo">
@@ -66,28 +62,23 @@
 		<section class="conteudo-principal">
 
 			<div class="conteudo-principal-escrito">
-				<img class="immagem-button" src="assets/Img/icons-00.png" alt="">
+				<img class="immagem-button" src="assets/Img/icons-00.webp" alt="">
 				<button class="button-principal">Rotas de evacuação</button>
 			</div>
 
 			<div class="conteudo-principal-escrito">
-				<input type="file" accept="image/*" capture="camera" id="captureInput" style="display: none;">
-				<img class="immagem-button" src="assets/Img/icons-01.png" alt="">
-				<button class="button-principal" onclick="acessarCamera()">Relatar Incidentes </button>
+				<img class="immagem-button" src="assets/Img/icons-01.webp" alt="">
+				<a href="Formulario.html"><button id="redirecionarButton" class="button-principal"> Relatar Incidentes</button></a>
 			</div>
 
 			<div class="conteudo-principal-escrito">
-				<img class="immagem-button" src="assets/Img/icons-02.png" alt="">
-				<button class="button-principal" id="mostrarContatosBtn">Contatos de Emergencia</button>
+				<img class="immagem-button" src="assets/Img/icons-03.webp" alt="">
+				<a href="acompanhar-incidentes.html"><button id="redirecionarButton" class="button-principal"> Acompanhar Incidentes</button></a>
 			</div>
-			<div id="lista-contatos" style="display: none;">
-				<ul>
-					<li><a href="tel:190">Polícia - 190</a></li>
-					<li><a href="tel:193">Bombeiros - 193</a></li>
-					<li><a href="tel:192">SAMU - 192</a></li>
-					<!-- Adicione mais contatos de emergência, se necessário -->
-				</ul>
-			</div>
+
+
+			<a href="tel:193"><button id="redirecionarButton" class="button-flutuante-direito">&#x1F692;</button></a>
+			<a href="tel:192"><button id="redirecionarButton" class="button-flutuante-esquerdo">&#128657;</button></a>
 
 		</section>
 
@@ -96,20 +87,18 @@
 			<div id="map" class="conteudo-mapa">
 				<h3 class="titulo-conteudo-segundario"> Mapa da Região &#128269;</h3>
 
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63153.19971145649!2d-35.015252550747995!3d-8.394286223990628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smapa%20suape!5e0!3m2!1spt-BR!2sbr!4v1695754242591!5m2!1spt-BR!2sbr"
-					width="400" height="320" style="border:0;" allowfullscreen="" loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1SeRH_DuYKGDAUus_fYdv42ZvILj3-oU&ehbc=2E312F&noprof=1"  width="400" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 			</div>
 		</section>
 	</main>
-	<!-- Agrupa informações de autoria, direitos autorais, contato, 
-		   mapa do site, links e documento relacionados. -->
-	<footer>Footer</footer>
 
 	<!-- Importação do arquivo JavaScript. -->
 	<script type="text/javascript" src="assets/js/script.js"></script>
+	
+	<script async
+    src="https://maps.googleapis.com/maps/api/js?AIzaSyBXwK7wR-s1iAsZlxzrL3utNgCfU4X1CfkY&callback=initMap">
+	</script>
 
 	<script>
 		let newWorker;
@@ -128,5 +117,4 @@
 		}
 	  </script>
 
-	</body>
-</html>
+</body>
