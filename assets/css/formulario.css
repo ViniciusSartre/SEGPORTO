@@ -35,32 +35,32 @@
 
   /* Estilos para o botão Home no cabeçalho */
   .botao-home {
-    background-color: #31506F;
     /* Cor de fundo do botão */
-    color: #fff;
+    background-color: #391BB0;
     /* Cor do texto */
-    border: none;
+    color: #fff;
     /* Remove a borda */
-    border-radius: 5px;
+    border: none;
     /* Adiciona cantos arredondados */
-    padding: 10px 20px;
+    border-radius: 5px;
     /* Espaçamento interno */
-    font-size: 16px;
+    padding: 10px 20px;
     /* Tamanho da fonte */
-    cursor: pointer;
+    font-size: 16px;
     /* Altera o cursor ao passar o mouse */
-    transition: background-color 0.3s ease;
+    cursor: pointer;
     /* Transição suave de cor de fundo */
+    transition: background-color 0.3s ease;
   }
 
   .botao-home:hover {
-    background-color: #21415F;
+    background-color: #391BB0;
     /* Cor de fundo quando hover (passar o mouse) */
   }
 
   /* Estilos para o botão de localização */
   #localizacaoButton {
-    background-color: #31506F;
+    background-color: #391BB0;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -73,7 +73,7 @@
   }
 
   #localizacaoButton:hover {
-    background-color: #21415F;
+    background-color: #391BB0;
   }
 
 
@@ -150,7 +150,7 @@
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #31506F;
+    background-color: #391BB0;
     color: #fff;
     border: none;
     border-radius: 5px;
