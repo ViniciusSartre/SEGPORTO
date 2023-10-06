@@ -21,6 +21,6 @@ O projeto foi desenvolvido com as seguintes Tecnologias:
 ## Integrantes
 - Anderson Lucena
 - Hugo Jorge
-- Julia Manguinho
+- Maria Júlia Manguinho
 - Pedro Henrique
 - Vinicius Sartre
